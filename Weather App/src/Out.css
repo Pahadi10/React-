@@ -1,0 +1,24 @@
+.line{
+    border-bottom: 1px solid #888;
+    padding-top: 20px;
+    width: 50%;
+
+}
+
+.out-div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.results{
+    background: #36494E;
+    margin: 20px;
+    padding-right: 30px;
+    border-radius: 15px;
+    color: aliceblue;
+}
+.results:hover{
+    background-color: #282c34;
+    animation-duration: 1s;
+}
