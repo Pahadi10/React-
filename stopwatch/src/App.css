@@ -1,0 +1,45 @@
+.App {
+  text-align: center;
+  background: #000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.timer{
+  font-size: 4em;
+}
+
+.stopwatch-box{
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.buttons-div{
+  display: flex;
+  justify-content: center;
+  gap: 40%;
+}
+
+.buttons{
+  font-size: 40px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 5px;  
+}
+
+
+#start-stop{
+  background-color: green;
+}
+
+#reset{
+  background-color: red;
+}
