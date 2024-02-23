@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    overflow-x: hidden;
+    background-color: #dbcbd8;
+background-image: linear-gradient(316deg, #dbcbd8 0%, #2e4057 74%);
+    color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.todo-item {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 8px;
+    gap: 10px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  /* .todo-item p {
+    color: #888;
+    text-decoration: line-through;
+  }  */
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .del{
+    border: none;
+    background: rgb(126, 124, 124);
+    /* border: 1px solid grey; */
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 2px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
   }
-}
+
+  .nav{
+    display: flex;
+    gap: 20px;
+  }
+
+  .edit{
+    /* border: 1px solid grey; */
+    background: rgb(126, 124, 124);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 2px;
+  }
+  
+  .add{
+    background: rgb(126, 124, 124);
+    padding: 2px;
+    border-radius: 5px;
+  }
+  
+  .inpbox{
+    background: rgb(126, 124, 124);
+    border-radius: 4px  ;
+  }
+
+  .save{
+    background: rgb(126, 124, 124);
+    padding: 2px;
+    border-radius: 5px;
+  }
+
+  .selectbox{
+    background: rgb(126, 124, 124);
+    border-radius: 4px  ;
+  }
+
+  .addInp{
+    background: rgb(126, 124, 124);
+    border-radius: 4px;
+    padding: 2px;
+    margin-right: 20px;
+  }
+  
