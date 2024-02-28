@@ -36,7 +36,7 @@ const Stopwatch = () => {
         <div className='timer'>{hour}:{min.toString().padStart(2,0)}:{sec.toString().padStart(2,0)}:{milisec.toString().padStart(2,0)}</div>
     <div className='buttons-div'>
 
-        <button className='buttons' id='start-stop' onClick={()=>setIsrunning(!isRunning)}> {isRunning?('Stop'):('Start')}</button>
+        <button className='buttons' id='start-stop' onClick={()=>setIsrunning(!isRunning)}> {isRunning?  'Stop': 'Start' }</button>
         <button className='buttons' id='reset' onClick={reset}>Reset</button>
     </div>
     </div>
